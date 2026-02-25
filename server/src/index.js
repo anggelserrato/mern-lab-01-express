@@ -34,5 +34,7 @@ app.use((req, res) => {
 })
 
 app.listen(process.env.PORT, () => {
-  console.log(`Servidor escuchando en el puerto ${process.env.PORT}`)
+  console.log(
+    `Servidor escuchando en el puerto http://localhost:${process.env.PORT}`
+  )
 })

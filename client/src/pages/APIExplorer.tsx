@@ -33,8 +33,10 @@ export default function APIExplorer() {
       }
     }
     checkServer()
+    const intervalId = setInterval(checkServer, 5000)
     return () => {
       mounted = false
+      clearInterval(intervalId)
     }
   }, [])
 
